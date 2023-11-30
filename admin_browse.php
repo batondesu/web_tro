@@ -96,13 +96,15 @@
             
             <div class="col-lg-3 mb-3">
                     <div class="card">
-                        <img src="<?php echo $list_image[1] ?>" alt=""
+                        <a href="<?php echo $link ?>" name="<?php echo $row["room_id"] ?>">
+                         <img src="<?php echo $list_image[1] ?>" alt=""
                             class="card-img-top img-fluid d-block mx-auto">
+                        </a>
                         <div class="card-body">
                             <P style="color:#828282" class="recipe-desc"> <?php echo $row["city"] ?>
                             </P>
-                            <h6 style="color:blue" class="card-title">
-                                <?php echo $row["title"] ?>
+                            <h6 style="color:blue" class="card-title" >
+                                <a href="<?php echo $link ?>" name="<?php echo $row["room_id"] ?>"><?php echo $row["title"] ?> </a>  
                             </h6>
                             <div class="card-text card-text-truncate mb-3">
                                 <p style="color:#828282" class="recipe-desc">Địa chỉ: <?php echo $row["address"]?>, <?php echo $row["district"] ?>, <?php echo $row["ward"] ?>
