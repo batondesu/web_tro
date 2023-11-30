@@ -8,20 +8,23 @@ function addList() {
             </div>
             <div class="listarea"> 
                 <div class="list-box">
-                <img src="images/CG.jpg">    
-                <a href="search.php"> Cầu Giấy </a>
+                    <img src="images/CG.jpg">    
+                    <a href="search.php"> Cầu Giấy </a>
                 </div>
 
                 <div class="list-box">
-                <img src="images/DD.jpg">
-                <a href="search.php"> Đống Đa </a>   
+                    <img src="images/DD.jpg">
+                    <a href="search.php"> Đống Đa </a>   
                 </div>
 
                 <div class="list-box">
-                <img src="images/TX.jpg">
-                <a href="search.php"> Thanh Xuân </a>   
-               
+                    <img src="images/TX.jpg">
+                    <a href="search.php"> Thanh Xuân </a>   
+                </div>
 
+                <div class="list-box">
+                    <img src="images/BD.jpg">
+                    <a href="search.php"> Ba Đình </a>  
                 </div>
             </div>
             

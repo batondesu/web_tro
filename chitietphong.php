@@ -259,7 +259,8 @@
                                                             </dl>
                                                             <dl>
                                                                 <dt>Ngày cập nhật:</dt>
-                                                                <dd class="published">17-04-2023 13:25:33</dd>
+                                                                <dd class="published"> <?php echo $row["last_update"] ?> </dd>
+                                                                
                                                             </dl>
 
                                                         </div>
