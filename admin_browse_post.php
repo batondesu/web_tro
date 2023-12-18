@@ -1,5 +1,5 @@
 <?php 
-session_start(); 
+    session_start(); 
     $conn = new mysqli("localhost", "root", "", "room_rent");
     $room_id = $_GET['room_id'];
     $user_id = $_GET['user_id'];

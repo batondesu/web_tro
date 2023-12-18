@@ -55,14 +55,15 @@
 
 
     
-    <?php $conn = new mysqli("localhost", "root", "", "room_rent");
+    <?php 
+        $conn = new mysqli("localhost", "root", "", "room_rent");
         $user_id = $_GET['user_id'];
         $sql = "SELECT r.*,i.image,rr.user_id FROM `room_info` r
                     LEFT JOIN image_vid i
                     ON i.room_id=r.room_id
                     LEFT JOIN rental_room rr
                     ON r.room_id=rr.room_id
-                    WHERE rr.user_id=$user_id" ;
+                    WHERE rr.user_id=$user_id and r.status2 = 'yes' " ;
         $result = $conn->query($sql);
         
     ?>
@@ -119,7 +120,8 @@
                                  </p>
                             </div>
                             <a href="<?php echo $link ?>" name="<?php echo $row["room_id"] ?>" class="btn btn-outline-success btn-sm">Read More</a>
-                            
+                            <a> </a>
+                            <a href="admin_browse_trash.php?room_id=<?php echo $row["room_id"]?>&user_id=<?php echo $user_id?>" class="btn btn-outline-success btn-sm fa fa-trash">Xóa</a>
                         </div>
                     </div>
             </div>
